@@ -136,3 +136,11 @@ class PomodoroTimer:
 
     def is_idle(self):
         return self.state == TimerState.IDLE
+
+    def get_total_seconds(self):
+        if self.timer_type == TimerType.POMODORO:
+            return self.settings.pomodoro_duration * 60
+        elif self.timer_type == TimerType.SHORT_BREAK:
+            return self.settings.short_break_duration * 60
+        else:
+            return self.settings.long_break_duration * 60
