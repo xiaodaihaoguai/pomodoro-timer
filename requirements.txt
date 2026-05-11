@@ -1,0 +1,6 @@
+# Pomodoro Timer - Dependencies
+# Python built-in libraries only - no external dependencies needed
+# tkinter: Included with Python
+# sqlite3: Included with Python
+# json: Included with Python
+# threading: Included with Python
